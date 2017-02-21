@@ -2,10 +2,12 @@ package test.algorytmy.structures.queue;
 
 import algorytmy.structures.queue.FIFOQueue;
 import algorytmy.structures.queue.Queue;
+import algorytmy.structures.queue.QueueException;
 
 public class FIFOQueueTests {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws QueueException {
         Queue queue = new FIFOQueue();
+        queue.pop();
         queue.push(2);
         queue.push(3);
         queue.push(4);
